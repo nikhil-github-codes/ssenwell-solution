@@ -1,0 +1,24 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">name</th>
+      <th scope="col">Duplicated number of time</th>
+    </tr>
+  </thead>
+
+ <tbody>
+    <tr  style="background-color: green; color:aliceblue"  *ngIf="more10length>10" >
+      <th  >{{Morethan10}}</th>
+      <td >{{more10length}}</td>
+    </tr>
+    <tr   style="background-color: red; color:aliceblue"   *ngIf="lessthantenlength>0 &&   lessthantenlength<3" >
+      <th   >{{lessthan10}}</th>
+      <td    > {{lessthantenlength}}</td>
+    </tr>
+    <tr  style="background-color: yellow; color:aliceblue"   *ngIf="length>2 &&   length<10">
+      <th>{{lenLen}}</th>
+      <td  >{{length}}</td>
+    </tr>
+  </tbody>
+
+</table>
